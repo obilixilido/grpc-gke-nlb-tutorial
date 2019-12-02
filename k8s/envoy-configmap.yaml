@@ -67,6 +67,7 @@ data:
                   filename: "/etc/ssl/envoy/tls.crt"
                 private_key:
                   filename: "/etc/ssl/envoy/tls.key"
+              alpn_protocols: ["h2"]
       clusters:
       - name: echo-grpc
         connect_timeout: 0.5s
